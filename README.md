@@ -1,4 +1,4 @@
-![PawchainPawswapGIF](https://github.com/siniekoo19/Simon-Says-Game/assets/144519238/dd787fc9-8092-4e7f-b3e4-67bcc6c3ef89)# Simon Says Game
+# Simon Says Game
 Welcome to the Simon Says Game! This project is a simple implementation of the classic memory game using HTML, CSS, and JavaScript.
 
 ## How to Play🎮
@@ -19,12 +19,12 @@ Welcome to the Simon Says Game! This project is a simple implementation of the c
      - To restart the game, press any key on the keyboard again.
 
 ## Project Structure🚀
-    The project consists of the following files:
-    - **index.html:** The main HTML file containing the structure of the game.
-    - **styles.css:** The CSS file for styling the game elements.
-    - **script.js:** The JavaScript file that contains the game logic.
+The project consists of the following files:
+  - **index.html:** The main HTML file containing the structure of the game.
+  - **styles.css:** The CSS file for styling the game elements.
+  - **script.js:** The JavaScript file that contains the game logic.
 
 ## GamePlay Mechanics
-    - **Sequence Generation:** The game randomly selects one of the four boxes to flash in each round. The sequence of flashed boxes is stored and extended in each round.
-    - **User Input:** Users must click the boxes in the exact sequence as they flashed. The game checks the user input against the stored sequence.
-    - **Feedback:** The game provides visual feedback by flashing the boxes and displays the current score and game over message when applicable.
+  - **Sequence Generation:** The game randomly selects one of the four boxes to flash in each round. The sequence of flashed boxes is stored and extended in each round.
+  - **User Input:** Users must click the boxes in the exact sequence as they flashed. The game checks the user input against the stored sequence.
+  - **Feedback:** The game provides visual feedback by flashing the boxes and displays the current score and game over message when applicable.
