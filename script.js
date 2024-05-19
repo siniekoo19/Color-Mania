@@ -1,13 +1,26 @@
 let gameSeq = [];
 let userSeq = [];
 
-let btns = ["yellow" ,"red", "purple", "blue"];
+let btns = ["yellow" ,"red", "purple", "blue", "red"];
 
 let started = false;
 let level = 0;
 
 let h3 = document.querySelector("h3");
 let btn = document.querySelector(".btn")
+
+let startBtn = document.querySelector(".start-btn");
+
+checkWindowSize();
+
+function checkWindowSize(){
+    if(window.innerWidth < 610){
+        h3.innerText = `Click Start to start the Game`;
+    }
+    else if(window.innerWidth > 610) {
+        hiddenStartBtn();
+    }
+}
 
 document.addEventListener("keypress", function(){
     if(started == false){
@@ -18,6 +31,31 @@ document.addEventListener("keypress", function(){
     }
 })
 
+startBtn.addEventListener("click", function(){
+    if(started == false){
+        console.log("Game Stared");
+        started = true;
+
+        hiddenStartBtn();
+        console.log("Button Start");
+        levelUp();
+    }
+})
+
+// Function Relate to Start Button When Window Width less than 600  
+function hiddenStartBtn(){
+    if(startBtn.classList.contains('visible')){
+        startBtn.classList.remove('visible');   
+    }
+    startBtn.classList.add('hidden');
+}
+
+function displayStartBtn(){
+    startBtn.classList.add('visible');
+}
+
+
+// Functions For the Game
 function gameFlash(btn){
     btn.classList.add("flash");
 
@@ -32,7 +70,7 @@ function levelUp(){
     level++;
     h3.innerText = `Level ${level}`;
 
-    let randIndex = Math.floor(Math.random() * 3);
+    let randIndex = Math.floor(Math.random() * 4);
     let randColor = btns[randIndex];
     let randbtn = document.querySelector(`.${randColor}`)
 
@@ -56,13 +94,25 @@ function checkAns(idx){
             setTimeout(levelUp, 1000);
         }
     } else {
-        h3.innerHTML = `<h2>Game Over!! Your Score <b>${level}<b> <br> Press any key to restart</h2>`;
-        document.querySelector("body").style.backgroundColor = "red";
-        setTimeout(function(){
-                document.querySelector("body").style.backgroundColor = "black";
-            }, 400
-        );
-        reset();
+        if(window.innerWidth < 610){
+            h3.innerHTML = `<h2>Game Over!! Your Score <b>${level}<b> <br> Press Start to restart</h2>`;
+            displayStartBtn();
+            document.querySelector("body").style.backgroundColor = "red";
+            setTimeout(function(){
+                    document.querySelector("body").style.backgroundColor = "rgb(0, 0, 50)";
+                }, 400
+            );
+            reset();
+        }
+        else if(window.innerWidth > 610) {
+            h3.innerHTML = `<h2>Game Over!! Your Score <b>${level}<b> <br> Press any key to restart</h2>`;
+            document.querySelector("body").style.backgroundColor = "red";
+            setTimeout(function(){
+                    document.querySelector("body").style.backgroundColor = "rgb(0, 0, 50)";
+                }, 400
+            );
+            reset();
+        }
     }
 }
 
@@ -89,12 +139,4 @@ function reset(){
     level = 0;
     gameSeq = [];
     userSeq = [];
-}
-
-
-function clickBtn(){
-    let disSet = startBtn.style.display;
-    if( disSet == "inline-block"){
-        startBtn.style.display = "none";
-    }
 }

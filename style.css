@@ -3,7 +3,6 @@
 body{
     text-align: center;
     font-family: "Poppins", sans-serif;
-    /* background-color: rgb(188, 224, 255); */
     background-color: rgb(0, 0, 50);
     color: aliceblue;
     overflow: hidden;
@@ -11,6 +10,20 @@ body{
 
 h3{
     font-weight: 900;
+}
+
+.start-btn{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    padding: 2.5px;
+    font-size: 20px;
+    height: 35px;
+    width: 85px;
+    border-radius: 10px;
+    border: 1px solid aliceblue;
+    margin-bottom: 40px;
+    color: rgb(0, 0, 50);
+    background-color: aliceblue;
 }
 
 .btn-container{
@@ -23,7 +36,7 @@ h3{
     height: 220px;
     width: 220px;
     /* border: 8px solid black; */
-    border: 2px solid white;
+    border: 2px solid aliceblue;
     border-radius: 35px;
     margin: 30px 15px;
 }
@@ -38,7 +51,6 @@ h3{
 
 .purple{
     background-color:rgb(155, 89, 222);
-    /* background-color:rgb(152, 230, 84); */
 }
 
 .yellow{
@@ -50,9 +62,15 @@ h3{
 }
 
 .userflash{
-    /* background-color: chartreuse; */
     background-color: green;
+}
 
+.hidden{
+    display: none;
+}
+
+.visible{
+    display: inline-block;
 }
 
 @media (max-width: 610px){
@@ -61,21 +79,14 @@ h3{
         width: 150px;
         border-radius: 25px;
     }
-
-    h3{
-        display: none;
-    }
 }
 
 @media (max-width: 360px){
     .btn{
+        margin-top: 100px;
         height: 110px;
         width: 110px;
         border-radius: 20px;
         margin: 15px 7.5px;
-    }
-
-    h3{
-        display: none;
     }
 }
