@@ -27,4 +27,4 @@ The project consists of the following files:
 ## GamePlay Mechanics
   - **Sequence Generation:** The game randomly selects one of the four boxes to flash in each round. The sequence of flashed boxes is stored and extended in each round.
   - **User Input:** Users must click the boxes in the exact sequence as they flashed. The game checks the user input against the stored sequence.
-  - **Feedback:** The game provides visual feedback by flashing the boxes and displays the current score and game over message when applicable.
+  - **Feedback:** The game provides visual feedback by flashing the body red to indicate the user entered the wrong sequence and displays the current score with a game over message when applicable.
