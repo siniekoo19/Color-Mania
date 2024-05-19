@@ -1,4 +1,4 @@
-# [Simon Says Game](https://siniekoo19.github.io/Simon-Says-Game/)
+# Simon Says Game
 Welcome to the Simon Says Game! This project is a simple implementation of the classic memory game using HTML, CSS, and JavaScript.
 
 ## How to Play🎮
@@ -17,6 +17,9 @@ Welcome to the Simon Says Game! This project is a simple implementation of the c
      - If you click the wrong box, the game ends.
      - Your score, which is the number of rounds you completed, will be displayed.
      - To restart the game, press any key on the keyboard again.
+
+## Play the Game
+You can play the game [here](https://siniekoo19.github.io/Simon-Says-Game/).
 
 ## Project Structure🚀
 The project consists of the following files:
