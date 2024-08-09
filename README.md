@@ -2,7 +2,7 @@
 Welcome to the Color Mania Game! This project is a simple implementation of the classic memory game using HTML, CSS, and JavaScript.
 
 ## Play the Game 💜💛💙❤️
-You can play the game [here]().
+You can play the game [here](https://siniekoo19.github.io/Color-Mania/).
 
 ## How to Play 🎮
 1. **Start the Game:**
