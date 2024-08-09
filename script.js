@@ -99,7 +99,7 @@ function checkAns(idx){
             displayStartBtn();
             document.querySelector("body").style.backgroundColor = "red";
             setTimeout(function(){
-                    document.querySelector("body").style.backgroundColor = "rgb(0, 0, 50)";
+                    document.querySelector("body").style.backgroundColor = "rgb(5, 52, 100)";
                 }, 400
             );
             reset();
@@ -108,7 +108,7 @@ function checkAns(idx){
             h3.innerHTML = `<h2>Game Over!! Your Score <b>${level}<b> <br> Press any key to restart</h2>`;
             document.querySelector("body").style.backgroundColor = "red";
             setTimeout(function(){
-                    document.querySelector("body").style.backgroundColor = "rgb(0, 0, 50)";
+                    document.querySelector("body").style.backgroundColor = "rgb(5, 52, 100)";
                 }, 400
             );
             reset();
